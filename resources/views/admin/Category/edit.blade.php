@@ -6,13 +6,13 @@
 @section('lable', 'Add New Category')
 
 @section('content')
-<form method="POST" action="{{ url('/edit') }}/{{ $c->id }}">
+<form method="POST" action="{{ url('/Category/edit') }}/{{ $c->id }}">
     @method('PUT')
     <div class="card">
         <div class="card-header">
             <h3 class="card-title d-inline">Enter Information to add new Category</h3>
             <div class="text-right">
-                <a href="{{ url('/') }}" class="btn btn-primary">Back</a>
+                <a href="{{ url('Category/') }}" class="btn btn-primary">Back</a>
             </div>
         </div>
         <div class="card-body">

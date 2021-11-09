@@ -10,7 +10,7 @@
     <div class="card-header">
         <h3 class="card-title d-inline">List of all Category</h3>
         <div class="text-right">
-            <a href="{{ url('/add') }}" class="btn btn-primary">Add</a>
+            <a href="{{ url('/Category/add') }}" class="btn btn-primary">Add</a>
         </div>
     </div>
     <div class="card-body">
@@ -68,7 +68,7 @@
                      }
             });
             $.ajax({
-                url: "{{ url('/') }}/" + id,
+                url: "{{ url('/Category/') }}/" + id,
                 data: {method: '_DELETE', submit: true}  ,  type: 'DELETE',
 
             }).always(function (data) {

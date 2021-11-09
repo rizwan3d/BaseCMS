@@ -13,13 +13,11 @@ use App\Http\Controllers\CategoryController;
 |
 */
 
-Route::get('/', function () {
-    return view('admin.Category.index');
-});
 
-Route::get('/add', [CategoryController::class, 'create']);
-Route::post('/add', [CategoryController::class, 'store']);
-Route::get('/edit/{id}', [CategoryController::class, 'edit']);
-Route::put('/edit/{id}', [CategoryController::class, 'update']);
-Route::delete('/{id}', [CategoryController::class, 'destroy']);
+Route::get('/Category', function () {  return view('admin.Category.index');});
+Route::get('/Category/add', [CategoryController::class, 'create']);
+Route::post('/Category/add', [CategoryController::class, 'store']);
+Route::get('/Category/edit/{id}', [CategoryController::class, 'edit']);
+Route::put('/Category/edit/{id}', [CategoryController::class, 'update']);
+Route::delete('/Category/{id}', [CategoryController::class, 'destroy']);
 Route::get('Category/list', [CategoryController::class, 'getCategory']);

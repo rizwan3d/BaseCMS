@@ -6,7 +6,7 @@
 @section('lable', 'Add New Category')
 
 @section('content')
-<form method="POST" action="{{ url('/add') }}">
+<form method="POST" action="{{ url('/Category/add') }}">
     <div class="card">
         <div class="card-header">
             <h3 class="card-title d-inline">Enter Information to add new Category</h3>
